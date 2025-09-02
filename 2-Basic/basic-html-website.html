@@ -35,18 +35,22 @@
       content="https://yourwebsite.com/path-to-image.jpg"
     />
   </head>
-  <body class="w-[calc(100%-200px)] mx-[100px] my-[80px]">
+  <body
+    class="w-[calc(100%-32px)] mx-[16px] my-[8px] lg:w-[calc(100%-200px)] lg:mx-[100px] lg:my-[80px] md:mx-[100px] md:my-[80px]"
+  >
     <header class="flex flex-col gap-4 p-4 border-2 border-gray-600">
-      <div class="flex items-center justify-between p-4">
-        <div class="flex items-center gap-2">
-          <div class="w-[50px] h-[50px] overflow-hidden">
+      <div
+        class="flex flex-col gap-4 md:flex-row lg:flex-row items-center justify-between p-4"
+      >
+        <div class="flex flex-col md:flex-row items-center gap-2">
+          <div class="w-[100px] h-[50px] overflow-hidden">
             <img src="logo.jpg" alt="logo image" />
           </div>
 
-          <p class="text-sm font-bold">Yu Yu Aung</p>
+          <p class="text-xl md:text-2xl lg:text-3xl font-bold">Yu Yu Aung</p>
         </div>
 
-        <nav class="flex gap-6">
+        <nav class="flex gap-2 md:gap-4 lg:gap-6">
           <a href="index.html">Home</a>
           <a href="#projects">Projects</a>
           <a href="#articles">Articles</a>
@@ -54,51 +58,72 @@
         </nav>
       </div>
       <div class="text-center p-12">
-        <h1 class="text-3xl font-semibold mb-4">Frontend Developer</h1>
-        <h3 class="text-xl font-semibold">I create websites</h3>
+        <h1 class="text-xl md:text-2xl lg:text-3xl font-semibold mb-4">
+          Frontend Developer
+        </h1>
+        <h3 class="text-l md:text-xl lg:text-2xl font-semibold">
+          I create websites and responsive designs
+        </h3>
       </div>
     </header>
     <main>
-      <div id="about" class="flex border-2 border-gray-600 item-stretch">
+      <div
+        id="about"
+        class="flex flex-col md:flex-row lg:flex-row border-2 border-gray-600 item-stretch"
+      >
         <section
           id="projects"
           class="p-4 border-2 border-gray-600 flex-1 py-[32px]"
         >
-          <h2 class="text-2xl mb-4">Projects</h2>
+          <h2 class="text-xl md:text-2xl lg:text-3xl mb-4">Projects</h2>
           <ul>
-            <li class="border-2 border-solid-gray-600 mx-4">
+            <li class="border-2 border-solid-gray-600 mx-4 p-2 md:p-4 lg:p-6">
               HTML Only Portfolio
             </li>
-            <li class="border-2 border-solid-gray-600 mx-4">Calculator</li>
-            <li class="border-2 border-solid-gray-600 mx-4">Quiz App</li>
-            <li class="border-2 border-solid-gray-600 mx-4">Countdown Timer</li>
-            <li class="border-2 border-solid-gray-600 mx-4">
+            <li class="border-2 border-solid-gray-600 mx-4 p-2 md:p-4 lg:p-6">
+              Calculator
+            </li>
+            <li class="border-2 border-solid-gray-600 mx-4 p-2 md:p-4 lg:p-6">
+              Quiz App
+            </li>
+            <li class="border-2 border-solid-gray-600 mx-4 p-2 md:p-4 lg:p-6">
+              Countdown Timer
+            </li>
+            <li class="border-2 border-solid-gray-600 mx-4 p-2 md:p-4 lg:p-6">
               Product Upcoming Page
             </li>
           </ul>
         </section>
         <section id="experience" class="flex flex-col flex-1">
           <div class="border-2 border-gray-600 p-4 flex-1">
-            <h2 class="text-2xl mb-4">Work Experience</h2>
+            <h2 class="text-xl md:text-2xl lg:text-3xl mb-4">
+              Work Experience
+            </h2>
             <p class="py-2">roadmap.sh</p>
             <p class="py-2">Solved all the frontend projects</p>
-            <a href="https://my-profile-link" class="text-blue-600"
+            <a
+              href="https://my-profile-link"
+              class="text-blue-600 underline underline-offset-2"
               >Visit My Profile</a
             >
           </div>
           <div class="border-2 border-gray-600 p-4 flex-1">
-            <h2 class="text-2xl mb-4">OpenSource Work</h2>
+            <h2 class="text-xl md:text-2xl lg:text-3xl mb-4">
+              OpenSource Work
+            </h2>
             <p class="py-2">
               Contributed to 50 opensource projects. Made my own projects with
               200 GitHub Stars.
             </p>
-            <a href="https://my-github-profile-link" class="text-blue-600"
+            <a
+              href="https://my-github-profile-link"
+              class="text-blue-600 underline underline-offset-2"
               >Visit My GitHub Profile</a
             >
           </div>
         </section>
         <section id="education" class="p-4 border-2 border-gray-600">
-          <h2 class="text-2xl p-4">Education</h2>
+          <h2 class="text-xl md:text-2xl lg:text-3xl p-4">Education</h2>
           <p class="mb-4">
             Graduated with 3.82 out of 4 CGPA. Won Acme Hackathon. Organized 30
             sessions.
@@ -119,8 +144,12 @@
         </section>
       </div>
       <div id="review" class="border-2 border-gray-600 p-4">
-        <h2 class="text-2xl my-4 font-semibold">Reviews from my teachers</h2>
-        <section class="flex gap-4 justify-center">
+        <h2 class="text-xl md:text-2xl lg:text-3xl my-4 font-semibold">
+          Reviews from my teachers
+        </h2>
+        <section
+          class="flex flex-col gap-2 md:flex-row md:gap-4 justify-center"
+        >
           <div class="p-4 border-2 border-gray-600 text-center">
             <p>
               Yu Yu was a brilliant student; always stood out with his
@@ -148,6 +177,10 @@
         </section>
       </div>
     </main>
-    <footer class="text-center">&copy; Yu Yu | all rights deserved 2025</footer>
+    <footer class="text-center">
+      <p class="text-sm md:text-l lg:text-l">
+        &copy; Yu Yu | all rights deserved 2025
+      </p>
+    </footer>
   </body>
 </html>
