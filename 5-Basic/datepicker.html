@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Picker</title>
+
+    <!-- Install Tailwind  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Use CSS for styling spans -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="max-w-[380px]">
+      <div class="flex mx-2 border-2">
+        <input type="text" placeholder="dd/ mm/ yyyy" class="text-2xl p-2" />
+        <button class="border-l-2 p-2">
+          <img
+            src="calendar.jpg"
+            alt="Calender Image"
+            class="w-[40px] h-[40px]"
+          />
+        </button>
+      </div>
+      <div
+        class="p-2 mx-2 flex flex-col gap-2 items-center border-2 border-t-0"
+      >
+        <div
+          class="relative before:content-['<'] before:absolute before:top-0 before:left-[-30px] before:font-bold before:text-xl before:text-gray-800 after:content-['>'] after:absolute after:top-0 after:right-[-30px] after:font-bold after:text-xl after:text-gray-800"
+        >
+          <span class="font-semibold text-xl text-gray-800">December 2022</span>
+        </div>
+        <div>
+          <span class="font-semibold text-lg m-4">S</span>
+          <span class="font-semibold text-lg m-4">M</span>
+          <span class="font-semibold text-lg m-4">T</span>
+          <span class="font-semibold text-lg m-4">W</span>
+          <span class="font-semibold text-lg m-4">T</span>
+          <span class="font-semibold text-lg m-4">F</span>
+          <span class="font-semibold text-lg m-4">S</span>
+        </div>
+      </div>
+      <div class="date-grid p-2 mx-2 border-2 border-t-0">
+        <span class="date-element"></span>
+        <span class="date-element"></span>
+        <span class="date-element"></span>
+        <span class="date-element">1</span>
+        <span class="date-element">2</span>
+        <span class="date-element">3</span>
+        <span class="date-element">4</span>
+        <span class="date-element">5</span>
+        <span class="date-element">6</span>
+        <span class="date-element">7</span>
+        <span class="date-element">8</span>
+        <span class="date-element">9</span>
+        <span class="date-element">10</span>
+        <span class="date-element">11</span>
+        <span class="date-element">12</span>
+        <span class="date-element">13</span>
+        <span class="date-element">14</span>
+        <span class="date-element">15</span>
+        <span class="date-element">16</span>
+        <span class="date-element">17</span>
+        <span class="date-element">18</span>
+        <span class="date-element">19</span>
+        <span class="date-element">20</span>
+        <span class="date-element">21</span>
+        <span class="date-element">22</span>
+        <span class="date-element">23</span>
+        <span class="date-element">24</span>
+        <span class="date-element">25</span>
+        <span class="date-element">26</span>
+        <span class="date-element">27</span>
+        <span class="date-element">28</span>
+        <span class="date-element">29</span>
+        <span class="date-element">30</span>
+        <span class="date-element">31</span>
+        <span class="date-element"></span>
+      </div>
+    </main>
+  </body>
+</html>
