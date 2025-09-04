@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonial Card</title>
+
+    <!-- adding favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!-- linking CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- SEO Meta Tags  -->
+    <meta name="description" content="changelog" />
+    <meta name="keywords" content="changelog" />
+    <meta name="author" content="Yu Yu Aung" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="changelog" />
+    <meta property="og:description" content="changelog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourwebsite.com/changelog.html" />
+
+    <!-- Install Tailwind  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <section class="flex flex-col gap-6 m-8 p-4">
+      <div class="first-row flex gap-4">
+        <div class="flex flex-col gap-2 p-2 flex-1">
+          <div
+            class="text-left bg-gray-900 text-white p-4 flex flex-col gap-4 rounded-xl ::after(content: '', )"
+          >
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
+              voluptatibus quae dolores blanditiis iste consectetur vitae
+              provident minus assumenda optio.
+            </p>
+            <p>Highly Recommended!</p>
+          </div>
+          <div class="flex items-center justify-around p-2">
+            <img
+              src="image.jpg"
+              alt="profile photo"
+              class="w-[100px] h-[100px] object-cover rounded-[50%]"
+            />
+            <div class="text-left text-gray-800">
+              <h3 class="mb-2 text-gray-800 text-2xl font-semibold">
+                Artem Jones
+              </h3>
+              <p class="text-gray-600 text-lg">Junior Frontend Developer</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex-1 flex flex-col gap-2 items-left border-2 p-2 rounded-xl justify-center"
+        >
+          <p class="p-2 text-lg">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
+            sit, fuga nesciunt debitis aliquid unde quibusdam cumque corrupti
+            veritatis magni alias assumenda commodi aut eum porro est nemo
+            exercitationem!
+          </p>
+          <div class="flex items-center gap-4 p-2 mt-4">
+            <img
+              src="image.jpg"
+              alt="profile photo"
+              class="w-[100px] h-[100px] object-cover rounded-[50%]"
+            />
+            <div class="text-left text-gray-800">
+              <h3 class="mb-2 text-gray-800 text-2xl font-semibold">
+                Artem Jones
+              </h3>
+              <p class="text-gray-600 text-lg">Junior Frontend Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec-row flex gap-2">
+        <img src="image.jpg" alt="profile photo" class="flex-1" />
+        <div class="flex-2 bg-gray-900 rounded-2xl">
+          <div><img src="star.png" alt="rating" /></div>
+          <h2 class="text-white font-semibold text-2xl">Jackie Mackle</h2>
+          <p class="text-gray-600 text-lg">Engineering Manager</p>
+          <p class="font-semibold text-white">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut,
+            voluptatem.
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+          aspernatur excepturi molestias soluta nemo nisi neque corrupti,
+          numquam possimus saepe, optio corporis deleniti sit sint eligendi at
+          nobis a facilis.
+        </p>
+        <div>
+          <div>
+            <img src="image.jpg" alt="profile photo" />
+            <p>Artem Jones</p>
+          </div>
+          <div>
+            <img src="image.jpg" alt="profile photo" />
+            <p>Artem Jones</p>
+          </div>
+          <div>
+            <img src="image.jpg" alt="profile photo" />
+            <p>Artem Jones</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
