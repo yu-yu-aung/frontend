@@ -30,8 +30,9 @@
       <div class="first-row flex gap-4">
         <div class="flex flex-col gap-2 p-2 flex-1">
           <div
-            class="text-left bg-gray-900 text-white p-4 flex flex-col gap-4 rounded-xl ::after(content: '', )"
+            class="relative text-left bg-gray-900 text-white p-4 flex flex-col gap-4 rounded-xl before:content-[''] before:absolute before:bottom-[-20px] before:left-8 before:border-[10px] before:border-transparent before:border-t-gray-900"
           >
+            <!-- I wanna add a reverse triangle here to get a speaking bubble effect! -->
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
               voluptatibus quae dolores blanditiis iste consectetur vitae
@@ -79,9 +80,18 @@
       </div>
 
       <div class="sec-row flex gap-2">
-        <img src="image.jpg" alt="profile photo" class="flex-1" />
-        <div class="flex-2 bg-gray-900 rounded-2xl">
-          <div><img src="star.png" alt="rating" /></div>
+        <div class="flex-1">
+          <img src="image.jpg" alt="profile photo" class="rounded-2xl" />
+        </div>
+
+        <div class="flex-2 bg-gray-900 rounded-2xl p-4 flex flex-col gap-2">
+          <div class="flex gap-1">
+            <img src="star.png" alt="rating" class="w-[18px] h-[18px]" />
+            <img src="star.png" alt="rating" class="w-[18px] h-[18px]" />
+            <img src="star.png" alt="rating" class="w-[18px] h-[18px]" />
+            <img src="star.png" alt="rating" class="w-[18px] h-[18px]" />
+            <img src="star.png" alt="rating" class="w-[18px] h-[18px]" />
+          </div>
           <h2 class="text-white font-semibold text-2xl">Jackie Mackle</h2>
           <p class="text-gray-600 text-lg">Engineering Manager</p>
           <p class="font-semibold text-white">
@@ -90,25 +100,44 @@
           </p>
         </div>
       </div>
-      <div class="slide">
+
+      <div
+        class="slide flex flex-col gap-2 items-center p-4 border-2 rounded-2xl"
+      >
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
           aspernatur excepturi molestias soluta nemo nisi neque corrupti,
           numquam possimus saepe, optio corporis deleniti sit sint eligendi at
           nobis a facilis.
         </p>
-        <div>
-          <div>
-            <img src="image.jpg" alt="profile photo" />
-            <p>Artem Jones</p>
+        <div class="flex gap-4 items-center">
+          <div
+            class="relative flex flex-col gap-2 before:content-['<'] before:absolute before:left-[-30px] before:top-1/2 before:-translate-y-1/2 before:text-2xl before:font-bold before:text-green-700"
+          >
+            <!-- I wanna add a '<' to give slider effect -->
+            <img
+              src="image.jpg"
+              alt="profile photo"
+              class="w-[80px] h-[80px] object-cover rounded-[50%]"
+            />
           </div>
-          <div>
-            <img src="image.jpg" alt="profile photo" />
-            <p>Artem Jones</p>
+          <div class="flex flex-col gap-2">
+            <img
+              src="image.jpg"
+              alt="profile photo"
+              class="w-[100px] h-[100px] object-cover rounded-[50%]"
+            />
+            <p class="font-semibold">Artem Jones</p>
           </div>
-          <div>
-            <img src="image.jpg" alt="profile photo" />
-            <p>Artem Jones</p>
+          <div
+            class="relative flex flex-col gap-2 after:content-['>'] after:absolute after:right-[-30px] after:top-1/2 after:-translate-y-1/2 after:text-2xl <after:font-bold></after:font-bold> after:text-green-700"
+          >
+            <!-- I wanna add a '>' to give slider effect -->
+            <img
+              src="image.jpg"
+              alt="profile photo"
+              class="w-[80px] h-[80px] object-cover rounded-[50%]"
+            />
           </div>
         </div>
       </div>
