@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app" class="w-600px flex flex-col items-center text-lg">
+      <h2 class="text-center text-2xl font-semibold">Area Calculator</h2>
+      <div class="flex gap-4 p-4">
+        <p class="flex">Result: <span class="result w-[300px]"></span></p>
+        <button class="store-btn p-2 border-2 rounded-lg">Store</button>
+        <button class="clear-btn p-2 border-2 rounded-lg">Clear</button>
+      </div>
+      <div class="flex gap-4 p-4">
+        <input
+          type="number"
+          placeholder="width"
+          class="input-width p-2 border-2 rounded-lg"
+        />
+        <input
+          type="number"
+          placeholder="height"
+          class="input-height p-2 border-2 rounded-lg"
+        />
+        <button class="calc-btn p-2 border-2 rounded-lg">Calculate</button>
+      </div>
+      <div>
+        <ul class="lists list-decimal"></ul>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
