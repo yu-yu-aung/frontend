@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+
+    <!-- initiate Tailwind  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="max-w-[800px] mx-auto">
+      <div class="flex">
+        <button class="tab-btn p-4 m-4 text-xl font-semibold">
+          First Tab
+        </button>
+        <button class="tab-btn p-4 m-4 text-xl font-semibold">
+          Second Tab
+        </button>
+        <button class="tab-btn p-4 m-4 text-xl font-semibold">
+          Third Tab
+        </button>
+        <button class="tab-btn p-4 m-4 text-xl font-semibold">
+          Fourth Tab
+        </button>
+      </div>
+      <div class="text-lg flex flex-col gap-6 w-[100%] p-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+          perferendis adipisci. Accusamus alias magnam corrupti velit ipsa
+          reiciendis mollitia fugiat. Similique itaque unde qui sit sint.
+          Doloremque labore fugit excepturi!
+        </p>
+        <p class="tab-content bg-gray-800 text-white p-4 text-center">First Tab Content</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+          obcaecati.
+        </p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
