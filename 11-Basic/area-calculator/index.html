@@ -7,28 +7,44 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app" class="w-600px flex flex-col items-center text-lg">
-      <h2 class="text-center text-2xl font-semibold">Area Calculator</h2>
-      <div class="flex gap-4 p-4">
-        <p class="flex">Result: <span class="result w-[300px]"></span></p>
-        <button class="store-btn p-2 border-2 rounded-lg">Store</button>
-        <button class="clear-btn p-2 border-2 rounded-lg">Clear</button>
+    <div
+      id="app"
+      class="w-300px md:600px lg:900px flex flex-col items-center m-4 text-lg md:text-2xl font-serif"
+    >
+      <h2 class="text-center text-xl md:text-2xl font-semibold">
+        Area Calculator
+      </h2>
+      <div
+        class="flex flex-col md:flex-row items-center justify-around gap-4 py-4"
+      >
+        <p class="result w-[250px] md:flex-grow bg-gray-200 text-center p-4"></p>
+        <div class="flex gap-4">
+          <button class="flex-grow store-btn p-2 border-2 rounded-lg">
+            Store
+          </button>
+          <button class="flex-grow clear-btn p-2 border-2 rounded-lg">
+            Clear
+          </button>
+        </div>
       </div>
-      <div class="flex gap-4 p-4">
+      <div class="flex flex-col md:flex-row gap-4 p-4">
         <input
           type="number"
           placeholder="width"
-          class="input-width p-2 border-2 rounded-lg"
+          class="input-width block p-2 border-2 rounded-lg"
         />
         <input
           type="number"
           placeholder="height"
-          class="input-height p-2 border-2 rounded-lg"
+          class="input-height block p-2 border-2 rounded-lg"
         />
         <button class="calc-btn p-2 border-2 rounded-lg">Calculate</button>
       </div>
-      <div>
-        <ul class="lists list-decimal"></ul>
+      <div class="mt-6">
+        <h2 class="font-semibold p-2">Calculated History</h2>
+        <ul class="lists flex-grow">
+          <li class="hidden last:block border-l-4 border-gray-500 px-2 py-1 text-gray-600">There is no calculated history.</li>
+        </ul>
       </div>
     </div>
     <script type="module" src="/src/main.js"></script>
